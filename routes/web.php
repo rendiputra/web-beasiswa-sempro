@@ -17,7 +17,7 @@ use App\Http\Controllers\FrontController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('list-beasiswa');
 });
 
 Route::get('/list-beasiswa', [FrontController::class, 'index'])->name('list-beasiswa');
